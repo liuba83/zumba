@@ -99,6 +99,49 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//Gallery
+const back = document.querySelector("#back");
+const next = document.querySelector("#next");
+
+const photos = [
+  "gallery/03.jpg",
+  "gallery/04.jpg",
+  "gallery/05.jpg",
+  "gallery/06.jpg",
+  "gallery/07.jpg",
+  "gallery/08.jpg",
+  "gallery/09.jpg",
+  "gallery/10.jpg",
+  "gallery/11.jpg",
+  "gallery/12.jpg",
+  "gallery/13.jpg",
+  "gallery/14.jpg",
+  "gallery/15.jpg",
+  "gallery/16.jpg",
+  "gallery/17.jpg",
+  "gallery/18.jpg",
+  "gallery/19.jpg",
+  "gallery/20.jpg",
+];
+
+let i = 0;
+
+next.addEventListener("click", () => {
+  i++;
+  if (i > photos.length - 1) {
+    i = 0;
+  }
+  document.querySelector("#pictures").src = photos[i];
+});
+
+back.addEventListener("click", () => {
+  i--;
+  if (i < 0) {
+    i = photos.length - 1;
+  }
+  document.querySelector("#pictures").src = photos[i];
+});
+
 // Working with contact form
 document
   .getElementById("contactForm")
@@ -109,3 +152,8 @@ document
 
     this.reset(); // Clear form fields
   });
+
+//Reset form
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName("form")) form.reset();
+};

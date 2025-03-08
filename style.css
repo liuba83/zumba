@@ -151,10 +151,6 @@ input:checked + .slider:before {
   text-align: center;
 }
 
-/* p {
-  text-align: center;
-} */
-
 /* About Section */
 .about {
   padding: 0 20px 20px;
@@ -218,7 +214,7 @@ input:checked + .slider:before {
 
 /* Gallery Section */
 .gallery {
-  padding: 40px 20px;
+  padding: 0 20px 20px;
   background: #f9f9f9;
   text-align: center;
 }
@@ -228,16 +224,17 @@ input:checked + .slider:before {
 }
 
 .gallery-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .gallery-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+  width: 700px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* Contact Section */
@@ -258,30 +255,45 @@ input:checked + .slider:before {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
-.contact label {
-  margin: 10px 0 5px;
-  text-align: left;
-  font-style: italic;
+.submitform {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.contact input,
-.contact textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+.text-input {
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgb(11, 7, 70);
+  border-radius: 5px;
+  padding: 12px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
-.contact button {
-  margin-top: 15px;
-  padding: 10px;
+textarea.text-input {
+  height: 120px;
+  resize: none;
+}
+
+.submitform button {
+  width: 100%;
+  padding: 12px;
   background: #e73156;
-  color: #fff;
+  color: white;
+  font-size: 16px;
   border: none;
   cursor: pointer;
   border-radius: 6px;
-  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.submitform button:hover {
+  background: #c82345; /* Darker shade on hover */
 }
 
 /* Footer */
