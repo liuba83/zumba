@@ -104,6 +104,7 @@ const back = document.querySelector("#back");
 const next = document.querySelector("#next");
 
 const photos = [
+  "gallery/01.jpg",
   "gallery/03.jpg",
   "gallery/04.jpg",
   "gallery/05.jpg",
@@ -121,7 +122,7 @@ const photos = [
   "gallery/17.jpg",
   "gallery/18.jpg",
   "gallery/19.jpg",
-  "gallery/20.jpg",
+  // "gallery/20.jpg",
 ];
 
 let i = 0;

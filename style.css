@@ -24,9 +24,9 @@ h3 {
 header {
   background: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  /* position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 100; */
 }
 
 .navbar {
@@ -146,7 +146,7 @@ input:checked + .slider:before {
 }
 
 .hero h4 {
-  font-size: 36px;
+  font-size: 24px;
   padding: 20px;
   text-align: center;
 }
@@ -177,10 +177,10 @@ input:checked + .slider:before {
   border-radius: 8px;
 }
 
-.about-block {
+.about-text {
   width: 100%;
   max-width: 600px;
-  padding: 2rem;
+  padding: 1rem;
   line-height: 170%;
   background: #f4f4f4;
 }
@@ -214,7 +214,8 @@ input:checked + .slider:before {
 
 /* Gallery Section */
 .gallery {
-  padding: 0 20px 20px;
+  /* padding: 0 20px 20px; */
+  padding: 0;
   background: #f9f9f9;
   text-align: center;
 }
@@ -224,15 +225,25 @@ input:checked + .slider:before {
 }
 
 .gallery-container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
 
+.gallery-container button {
+  cursor: pointer;
+  border: none;
+  background: #f9f9f9;
+  font-size: 27px;
+}
+
 .gallery-container img {
-  width: 700px;
-  height: 500px;
+  /* width: 700px;
+  height: 500px; */
+  width: 65%;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -306,7 +317,15 @@ footer {
 
 /* Media Query for Desktop & Larger Screens */
 @media (min-width: 768px) {
-  /* Navigation: Horizontal layout */
+  /* Header & Navigation (Horizontal layout) */
+  header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
   .navbar {
     flex-direction: row;
     justify-content: space-between;
@@ -323,6 +342,10 @@ footer {
     margin-top: 0;
   }
 
+  .hero h4 {
+    font-size: 36px;
+  }
+
   /* About Section: Photo left, text right */
   .about-container {
     flex-direction: row;
@@ -337,8 +360,9 @@ footer {
     object-position: 0 15%;
   }
 
-  .about-block {
+  .about-text {
     width: 55%;
+    padding: 2rem;
     border-radius: 6px;
   }
 
@@ -347,37 +371,29 @@ footer {
   }
 
   .ladder {
-    background-color: #fff;
+    width: 100vw;
+    /* width: 100%; */
+    margin-left: calc(-50vw + 50%);
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Space between elements */
+    align-items: center;
+    gap: 10px;
     text-align: justify;
-
-    width: 100vw;
-    margin-left: calc(
-      -50vw + 50%
-    ); /* Centers full-width div inside a container */
-    /* padding: 25px 100px 25px 100px; */
+    background-color: #fff;
     padding: 25px 0 25px 0;
   }
 
-  .ladder-one {
+  /* .ladder-one {
     background-color: #fae7ec;
-    align-self: flex-start; /* Align to the left */
-    margin-left: 50px;
   }
 
   .ladder-two {
     background-color: #fae7ec;
-    margin-left: 175px;
-    /* align-self: center; Move slightly to the right */
   }
 
   .ladder-three {
     background-color: #fae7ec;
-    margin-left: 300px;
-    /* align-self: flex-end; Move even further right */
-  }
+  } */
 
   .ladder-one,
   .ladder-two,
@@ -385,8 +401,10 @@ footer {
     padding: 20px;
     border-radius: 10px;
     width: 65%;
-    opacity: 0; /* Initially hidden */
-    transform: translateY(50px); /* Move downward */
+    opacity: 0;
+
+    background-color: #fae7ec;
+    transform: translateY(50px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   }
 
@@ -399,8 +417,17 @@ footer {
   }
 
   /* Gallery: Grid with two columns (or more if space permits) */
+  .gallery {
+    padding: 0 20px 20px;
+  }
+
   .gallery-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .gallery-container img {
+    width: 700px;
+    height: 500px;
   }
 
   .contact {
@@ -412,9 +439,37 @@ footer {
 @media (min-width: 1024px) {
   .about-container img {
     width: 35%;
-    /* height: 350px; */
     height: 450px;
     object-fit: cover;
     object-position: 0 15%;
+  }
+
+  .ladder {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+    padding: 25px 0 25px 0;
+  }
+
+  .ladder-one,
+  .ladder-two,
+  .ladder-three {
+    padding: 20px;
+    border-radius: 10px;
+    width: 65%;
+    opacity: 0;
+    background-color: #fae7ec;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  /* When the element is visible, animate it */
+  .ladder-one.show,
+  .ladder-two.show,
+  .ladder-three.show {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
