@@ -1,10 +1,3 @@
-// GSAP animation for hero text
-// gsap.fromTo(
-//   "h4",
-//   { x: -50 },
-//   { x: 1200, y: 10, scale: 2, opacity: 1, duration: 1.5 }
-// );
-
 // Video Skip Functionality
 // const video = document.getElementById("zumbaVideo");
 // const skipButton = document.getElementById("skipButton");
@@ -29,45 +22,178 @@ const langLabel = document.getElementById("langLabel");
 // Translation mappings for key headings
 const translations = {
   en: {
+    aboutNav: "About",
+    classesNav: "Classes",
+    galleryNav: "Gallery",
+    contactNav: "Contact",
     welcomeText: "Welcome to My Zumba World!",
     aboutHeading: "About",
+    aboutText:
+      " Hi there! My name is Hanna Kovalenko, and I am a licensed Zumba® Instructor, passionate about helping people connect with their bodies, uplift their spirits, and have fun through dance and movement. With certifications in Zumba® Basic 1, Zumba Gold®, and CIRCL Mobility™, I bring a unique blend of expertise to every class.",
+    expertiseHeading: "My expertise is confirmed by licenses:",
+    licenseTextOne: "CIRCL Mobility™ Instructor License (January 14, 2023)",
+    licenseTextTwo: "Zumba® Basic 1 Instructor License (March 3, 2023)",
+    licenseTextThree: "Zumba Gold® Instructor License (April 6, 2023)",
     classesHeading: "Why Zumba?",
+    whyZumbaText:
+      "Zumba® is more than just a workout – it's a way to feel energized, joyful, and in sync with yourself and others. It blends fitness with music and rhythm from around the globe, offering numerous benefits:",
+    whyOne:
+      "Physical Fitness: Improve your cardiovascular health, endurance, and coordination.",
+    whyTwo: "Reduces Stress: Dance away your worries and leave with a smile.",
+    whyThree:
+      "Mental Well-being: Stay sharp and focused through the power of movement and music.",
+    whyFour:
+      "Community: Join a welcoming environment that celebrates every individual.",
+    ladderOne: "My classes",
+    ladderTwo: "Zumba Gold® Chair",
+    zumbaChairText:
+      "If you have any kind of moving issues, we can explore the Zumba Gold® Chair class. This program offers all the benefits of Zumba® while being seated, making it accessible for everyone. You can still enjoy the rhythm, movements, and energy in a way that suits your abilities.",
+    ladderThree: "Benefits of Zumba Gold® Chair",
+    benefitOne:
+      "Improves Mobility: Gentle movements enhance joint flexibility and range of motion.",
+    benefitTwo:
+      "Boosts Mood: Enjoy the music and uplifting environment without worrying about standing.",
+    benefitThree:
+      "Inclusive Fitness: Designed for all fitness levels, ensuring everyone can participate.",
+    joinHeader: "Join the Zumba Family",
+    joinText:
+      "Zumba® is more than just exercise; it’s a family. Together, we celebrate every step, every beat, and every achievement. So come join us and experience the joy, rhythm, and community of Zumba®. Let’s dance our way to better health and happiness!",
     galleryHeading: "Gallery",
     contactHeading: "Contact Me",
+    contactMeButton: "Send Message",
+    footer: "All Rights Reserved | 2025",
   },
   uk: {
-    welcomeText: "Ласкаво просимо до мого світу Zumba!",
+    aboutNav: "Про мене",
+    classesNav: "Мої заняття",
+    galleryNav: "Галерея",
+    contactNav: "Контакти",
+    welcomeText: "Ласкаво просимо до мого Zumba світу!",
     aboutHeading: "Про мене",
+    aboutText:
+      "Привіт! Мене звати  Ганна, і я ліцензований Zumba® інструктор, який із захопленням допомагає людям відчути своє тіло, підняти настрій і отримати задоволення через танець і рух. Завдяки сертифікаціям Zumba® Basic 1, Zumba Gold® та CIRCL Mobility™ я додаю у кожне заняття унікальне поєднання знань і досвіду.",
+    expertiseHeading: "Моя експертність підтверджена ліцензіями:",
+    licenseTextOne: "Ліцензія інструктора CIRCL Mobility™ (14 січня 2023)",
+    licenseTextTwo: "Ліцензія інструктора Zumba® Basic 1 (3 березня 2023)",
+    licenseTextThree: "Ліцензія інструктора Zumba Gold® (6 квітня 2023)",
     classesHeading: "Чому Zumba?",
+    whyZumbaText:
+      "Zumba® – це більше, ніж просто тренування. Це спосіб відчути заряд енергії, радість і гармонію із собою та оточенням. Поєднуючи фітнес із музикою та ритмами з усього світу, Zumba® пропонує безліч переваг:",
+    whyOne:
+      "Покращує фізичну форму: зміцнює серцево-судинну систему, витривалість і координацію.",
+    whyTwo:
+      "Зменшує стрес: танцюйте, забуваючи про турботи, і виходьте із заняття з посмішкою.",
+    whyThree:
+      " Підтримує ментальне здоров’я: рух і музика допомагають залишатися зосередженими та активними.",
+    whyFour:
+      "Створює відчуття спільноти: приєднуйтесь до дружньої атмосфери, де кожен – цінна частина команди.",
+    ladderOne: "Мої заняття",
+    ladderTwo: "Zumba Gold® На стільці",
+    zumbaChairText:
+      "Якщо у вас є труднощі з рухливістю, ви можете спробувати Zumba Gold® Chair – програму, яка зберігає всі переваги Zumba®, але виконується в сидячому положенні. Це робить заняття доступними для кожного, дозволяючи насолоджуватися ритмом, рухами та енергією у комфортному форматі.",
+    ladderThree: "Переваги Zumba Gold® На стільці",
+    benefitOne:
+      " Покращує рухливість – м’які рухи сприяють гнучкості суглобів і розширенню амплітуди рухів.",
+    benefitTwo:
+      "Підіймає настрій – музика та позитивна атмосфера подарують радість без необхідності стояти.",
+    benefitThree:
+      "Фітнес для всіх – програма підходить для будь-якого рівня фізичної підготовки, забезпечуючи комфортну участь кожного.",
+    joinHeader: "Приєднуйтесь до Zumba-родини",
+    joinText:
+      "Zumba® – це більше, ніж просто фітнес, це сім’я. Разом ми святкуємо кожен рух, кожен ритм і кожне досягнення. Тож приєднуйтеся до нас, відчуйте радість, музику і силу спільноти!",
     galleryHeading: "Галерея",
-    contactHeading: "Зв'язатися зі мною",
+    contactHeading: "Готові рухатися? Давайте Zumba!",
+    contactMeButton: "Відправити повідомлення",
+    footer: "Всі права захищені | 2025",
   },
 };
 
 function toggleLanguage() {
   const lang = languageToggle.checked ? "uk" : "en";
-  langLabel.textContent = languageToggle.checked ? "UK" : "EN";
+  langLabel.textContent = languageToggle.checked ? "УКР" : "EN";
 
   // Update the text of key sections
+  const aboutNavElem = document.querySelector(".about-nav");
+  const classesNavElem = document.querySelector(".classes-nav");
+  const galleryNavElem = document.querySelector(".gallery-nav");
+  const contactNavElem = document.querySelector(".contact-nav");
   const welcomeTextElem = document.querySelector(".hero h4");
   const aboutHeadingElem = document.querySelector("#about h2");
-  const classesHeadingElem = document.querySelector("#classes h2");
-  const videoHeadingElem = document.querySelector("#video h2");
+  const aboutTextElem = document.querySelector(".about-text");
+  const expertiseHeadingElem = document.querySelector(".expertise");
+  const licenseTextOneElem = document.querySelector(".license-1");
+  const licenseTextTwoElem = document.querySelector(".license-2");
+  const licenseTextThreeElem = document.querySelector(".license-3");
+  const classesHeadingElem = document.querySelector(".why-zumba");
+  const whyZumbaTextElem = document.querySelector(".why-zumba-text");
+  const whyOneElem = document.querySelector(".why-1");
+  const whyTwoElem = document.querySelector(".why-2");
+  const whyThreeElem = document.querySelector(".why-3");
+  const whyFourElem = document.querySelector(".why-4");
+  const ladderOneElem = document.querySelector(".ladder-one h2");
+  const ladderTwoElem = document.querySelector(".ladder-two h2");
+  const zumbaChairTextElem = document.querySelector(".zumba-chair");
+  const ladderThreeElem = document.querySelector(".ladder-three h2");
+  const benefitOneElem = document.querySelector(".benefit-1");
+  const benefitTwoElem = document.querySelector(".benefit-2");
+  const benefitThreeElem = document.querySelector(".benefit-3");
+  const joinHeaderElem = document.querySelector(".join-header");
+  const joinTextElem = document.querySelector(".join-zumba");
   const galleryHeadingElem = document.querySelector("#gallery h2");
   const contactHeadingElem = document.querySelector("#contact h2");
+  const contactMeButtonElem = document.querySelector(".contact-me-btn");
+  const footerElem = document.querySelector(".footer");
 
+  if (aboutNavElem) aboutNavElem.textContent = translations[lang].aboutNav;
+  if (classesNavElem)
+    classesNavElem.textContent = translations[lang].classesNav;
+  if (galleryNavElem)
+    galleryNavElem.textContent = translations[lang].galleryNav;
+  if (contactNavElem)
+    contactNavElem.textContent = translations[lang].contactNav;
   if (welcomeTextElem)
     welcomeTextElem.textContent = translations[lang].welcomeText;
   if (aboutHeadingElem)
     aboutHeadingElem.textContent = translations[lang].aboutHeading;
+  if (aboutTextElem) aboutTextElem.textContent = translations[lang].aboutText;
+  if (expertiseHeadingElem)
+    expertiseHeadingElem.textContent = translations[lang].expertiseHeading;
+  if (licenseTextOneElem)
+    licenseTextOneElem.textContent = translations[lang].licenseTextOne;
+  if (licenseTextTwoElem)
+    licenseTextTwoElem.textContent = translations[lang].licenseTextTwo;
+  if (licenseTextThreeElem)
+    licenseTextThreeElem.textContent = translations[lang].licenseTextThree;
   if (classesHeadingElem)
     classesHeadingElem.textContent = translations[lang].classesHeading;
-  if (videoHeadingElem)
-    videoHeadingElem.textContent = translations[lang].videoHeading;
+  if (whyZumbaTextElem)
+    whyZumbaTextElem.textContent = translations[lang].whyZumbaText;
+  if (whyOneElem) whyOneElem.textContent = translations[lang].whyOne;
+  if (whyTwoElem) whyTwoElem.textContent = translations[lang].whyTwo;
+  if (whyThreeElem) whyThreeElem.textContent = translations[lang].whyThree;
+  if (whyFourElem) whyFourElem.textContent = translations[lang].whyFour;
+  if (ladderOneElem) ladderOneElem.textContent = translations[lang].ladderOne;
+  if (ladderTwoElem) ladderTwoElem.textContent = translations[lang].ladderTwo;
+  if (zumbaChairTextElem)
+    zumbaChairTextElem.textContent = translations[lang].zumbaChairText;
+  if (ladderThreeElem)
+    ladderThreeElem.textContent = translations[lang].ladderThree;
+  if (benefitOneElem)
+    benefitOneElem.textContent = translations[lang].benefitOne;
+  if (benefitTwoElem)
+    benefitTwoElem.textContent = translations[lang].benefitTwo;
+  if (benefitThreeElem)
+    benefitThreeElem.textContent = translations[lang].benefitThree;
+  if (joinHeaderElem)
+    joinHeaderElem.textContent = translations[lang].joinHeader;
+  if (joinTextElem) joinTextElem.textContent = translations[lang].joinText;
   if (galleryHeadingElem)
     galleryHeadingElem.textContent = translations[lang].galleryHeading;
   if (contactHeadingElem)
     contactHeadingElem.textContent = translations[lang].contactHeading;
+  if (contactMeButtonElem)
+    contactMeButtonElem.textContent = translations[lang].contactMeButton;
+  if (footerElem) footerElem.textContent = translations[lang].footer;
 }
 
 languageToggle.addEventListener("change", toggleLanguage);

@@ -28,11 +28,11 @@
         <div class="logo">Hanna Kovalenko</div>
         <ul class="nav-links">
           <!-- <li><a href="#home">Home</a></li> -->
-          <li><a href="#about">About</a></li>
-          <li><a href="#classes">Classes</a></li>
+          <li><a class="about-nav" href="#about">About</a></li>
+          <li><a class="classes-nav" href="#classes">Classes</a></li>
           <!-- <li><a href="#video">Video</a></li> -->
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="gallery-nav" href="#gallery">Gallery</a></li>
+          <li><a class="contact-nav" href="#contact">Contact</a></li>
         </ul>
         <!-- Language Switch -->
         <div class="lang-switch">
@@ -74,46 +74,62 @@
       <div class="home-content-wrapper">
         <!-- Classes / Why Zumba Section -->
         <section id="classes" class="classes">
-          <h2>My expertise is confirmed by licenses:</h2>
+          <h2 class="expertise">My expertise is confirmed by licenses:</h2>
           <ul class="no-bullets">
             <li>
               <i class="fa-solid fa-check" style="color: rgb(231, 49, 86)"></i>
-              <b>CIRCL Mobility™ Instructor License</b> (January 14, 2023)
+              <b class="license-1"
+                >CIRCL Mobility™ Instructor License (January 14, 2023)</b
+              >
             </li>
             <li>
               <i class="fa-solid fa-check" style="color: rgb(231, 49, 86)"></i>
-              <b>Zumba® Basic 1 Instructor License</b> (March 3, 2023)
+              <b class="license-2"
+                >Zumba® Basic 1 Instructor License (March 3, 2023)</b
+              >
             </li>
             <li>
               <i class="fa-solid fa-check" style="color: rgb(231, 49, 86)"></i>
-              <b>Zumba Gold® Instructor License</b> (April 6, 2023)
+              <b class="license-3"
+                >Zumba Gold® Instructor License (April 6, 2023)</b
+              >
             </li>
           </ul>
-          <h2>Why Zumba?</h2>
-          <p>
-            Zumba® is more than just a workout – it’s a way to feel energized,
-            joyful, and in sync with yourself and others. It blends fitness with
-            music and rhythm from around the globe, offering numerous benefits:
+          <h2 class="why-zumba">Why Zumba?</h2>
+          <p class="why-zumba-text">
+            Zumba® is more than just a workout – it&#39;s a way to feel
+            energized, joyful, and in sync with yourself and others. It blends
+            fitness with music and rhythm from around the globe, offering
+            numerous benefits:
           </p>
           <ul class="no-bullets no-bullets--why-zumba">
             <li>
               <i class="fa-solid fa-check" style="color: rgb(231, 49, 86)"></i>
-              Boosts Physical Fitness: Improve your cardiovascular health,
-              endurance, and coordination.
+              <b class="why-1"
+                >Physical Fitness: Improve your cardiovascular health,
+                endurance, and coordination.</b
+              >
             </li>
             <li>
               <i class="fa-solid fa-check" style="color: rgb(231, 49, 86)"></i>
-              Reduces Stress: Dance away your worries and leave with a smile.
+              <b class="why-2">
+                Reduces Stress: Dance away your worries and leave with a
+                smile.</b
+              >
             </li>
             <li>
               <i class="fa-solid fa-check" style="color: rgb(231, 49, 86)"></i>
-              Enhances Mental Well-being: Stay sharp and focused through the
-              power of movement and music.
+              <b class="why-3"
+                >Mental Well-being: Stay sharp and focused through the power of
+                movement and music.</b
+              >
             </li>
             <li>
               <i class="fa-solid fa-check" style="color: rgb(231, 49, 86)"></i>
-              Builds Community: Join a welcoming environment that celebrates
-              every individual.
+              <b class="why-4"
+                >Community: Join a welcoming environment that celebrates every
+                individual.</b
+              >
             </li>
           </ul>
           <p>
@@ -126,7 +142,7 @@
           <div class="ladder">
             <div class="ladder-one">
               <h2>My classes</h2>
-              <p>
+              <p class="my-classes-text-p1">
                 I specialize in offering Zumba Gold® classes for individuals
                 aged 40 and above, providing a medium intensity yet invigorating
                 experience. Each 30-minute class is a lively journey through
@@ -135,7 +151,7 @@
                 and additional rhythms.
               </p>
 
-              <p>
+              <p class="my-classes-text-p2">
                 I offer both group and private classes tailored to your
                 preferences. For pricing, class schedules, and locations, please
                 visit
@@ -146,7 +162,7 @@
                 >
               </p>
 
-              <p>
+              <p class="my-classes-text-p3">
                 Every class is a party – a <b>Party for Your Heart!</b> Enjoy
                 8-9 songs that get you moving, smiling, and feeling amazing.
               </p>
@@ -154,10 +170,12 @@
 
             <div class="ladder-two">
               <h2>Zumba Gold® Chair</h2>
-              <p>
-                This class offers all the benefits of Zumba® while being seated,
-                making it accessible for everyone. Enjoy the rhythm, movements,
-                and energy tailored to your abilities.
+              <p class="zumba-chair">
+                If you have any kind of moving issues, we can explore the Zumba
+                Gold® Chair class. This program offers all the benefits of
+                Zumba® while being seated, making it accessible for everyone.
+                You can still enjoy the rhythm, movements, and energy in a way
+                that suits your abilities.
               </p>
             </div>
 
@@ -166,27 +184,35 @@
               <ul class="no-bullets">
                 <li>
                   <i class="fa-solid fa-check" style="color: #e73156"></i>
-                  <b>Improves Mobility:</b> Gentle movements enhance joint
-                  flexibility and range of motion.
+                  <b class="benefit-1"
+                    >Improves Mobility: Gentle movements enhance joint
+                    flexibility and range of motion.</b
+                  >
                 </li>
                 <li>
                   <i class="fa-solid fa-check" style="color: #e73156"></i>
-                  <b>Boosts Mood:</b> Enjoy the music and uplifting environment
-                  without worrying about standing.
+                  <b class="benefit-2"
+                    >Boosts Mood: Enjoy the music and uplifting environment
+                    without worrying about standing.</b
+                  >
                 </li>
                 <li>
                   <i class="fa-solid fa-check" style="color: #e73156"></i>
-                  <b>Inclusive Fitness:</b> Designed for all fitness levels,
-                  ensuring everyone can participate.
+                  <b class="benefit-3"
+                    >Inclusive Fitness: Designed for all fitness levels,
+                    ensuring everyone can participate.</b
+                  >
                 </li>
               </ul>
             </div>
           </div>
 
-          <h2>Join the Zumba Family</h2>
+          <h2 class="join-header">Join the Zumba Family</h2>
           <p class="join-zumba">
-            Experience the joy, rhythm, and community of Zumba®. Let’s dance our
-            way to better health and happiness!
+            Zumba® is more than just exercise; it&#39;s a family. Together, we
+            celebrate every step, every beat, and every achievement. So come
+            join us and experience the joy, rhythm, and community of Zumba®.
+            Let&#39;s dance our way to better health and happiness!
           </p>
         </section>
 
@@ -202,7 +228,7 @@
 
         <!-- Contact Section -->
         <section id="contact" class="contact">
-          <h2>Contact Me</h2>
+          <h2>Ready to move? Let&#39;s Zumba!</h2>
           <form action="https://formspree.io/f/mnnpagyq" method="POST">
             <div class="submitform">
               <input
@@ -233,7 +259,7 @@
               ></textarea>
             </div>
             <div class="submitform">
-              <button type="submit">Send Message</button>
+              <button class="contact-me-btn" type="submit">Send Message</button>
             </div>
           </form>
         </section>
@@ -241,7 +267,7 @@
     </main>
 
     <footer>
-      <p>All Rights Reserved | 2025</p>
+      <p class="footer">All Rights Reserved | 2025</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
