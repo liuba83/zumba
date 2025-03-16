@@ -303,7 +303,6 @@ const photos = [
   "gallery/17.jpg",
   "gallery/18.jpg",
   "gallery/19.jpg",
-  // "gallery/20.jpg",
 ];
 
 let i = 0;
@@ -329,13 +328,9 @@ document
   .getElementById("contactForm")
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent form from actually submitting
-
-    alert("Thank you! Your message has been sent."); // Show confirmation message
-
-    this.reset(); // Clear form fields
   });
 
-//Reset form
-window.onbeforeunload = () => {
-  for (const form of document.getElementsByTagName("form")) form.reset();
-};
+// //Reset form
+// window.onbeforeunload = () => {
+//   for (const form of document.getElementsByTagName("form")) form.reset();
+// };

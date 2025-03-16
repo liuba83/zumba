@@ -20,6 +20,12 @@
       src="https://kit.fontawesome.com/8351363f4d.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      //Reset form
+      window.onbeforeunload = () => {
+        for (const form of document.getElementsByTagName("form")) form.reset();
+      };
+    </script>
   </head>
   <body>
     <!-- Navigation Bar -->
