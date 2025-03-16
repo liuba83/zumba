@@ -44,11 +44,26 @@ const translations = {
       "Mental Well-being: Stay sharp and focused through the power of movement and music.",
     whyFour:
       "Community: Join a welcoming environment that celebrates every individual.",
+    whyZumbaOffer: "If you don't know what Zumba is, please visit the",
+    webLink: "official website.",
     ladderOne: "My classes",
-    ladderTwo: "Zumba Gold® Chair",
+    ladderOneTextOne:
+      "I am a dedicated instructor who tailors each session to suit the unique needs of my students. Currently, I specialize in offering Zumba Gold® classes for individuals aged 40 and above. These sessions are carefully designed to provide a medium intensity yet invigorating experience, perfect for staying active and in harmony with your body and soul.",
+    ladderOneTextTwo:
+      "Each 30-minute Zumba Gold® class is a lively journey through various musical styles. You’ll groove to merengue, swing, tango, reggae, cumbia, flamenco, mambo, cha-cha-cha, merengue urbano, salsa, bachata, and many more.",
+    ladderOneTextThree:
+      "And for an extra tropical twist, I also offer Caribbean-style programs featuring Ska, Soca, and more. It’s an excellent opportunity to embrace the rhythm and energy of vibrant cultures.",
+    ladderTwoHeaderOne: "Zumba Gold® Chair",
+    ladderTwoHeaderTwo: "Benefits of Zumba Gold® Chair",
     zumbaChairText:
       "If you have any kind of moving issues, we can explore the Zumba Gold® Chair class. This program offers all the benefits of Zumba® while being seated, making it accessible for everyone. You can still enjoy the rhythm, movements, and energy in a way that suits your abilities.",
-    ladderThree: "Benefits of Zumba Gold® Chair",
+    ladderThree: "Group and Private classes",
+    ladderThreeTextOne:
+      "I offer both group and private classes to suit your preferences and schedule. Whether you enjoy the energy of dancing with others or prefer one-on-one sessions tailored to your specific needs, there’s an option for you.",
+    ladderThreeTextTwo:
+      "For information on actual prices, class schedules, and the addresses where group classes are held, please visit my official instructor page",
+    ladderThreeTextThree:
+      "Every class is a party – a Party for Your Heart! We’ll enjoy 8-9 songs that get you moving, smiling, and feeling amazing. Whether you’re looking to stay fit, recharge your energy, or simply have fun, Zumba® is the perfect escape.",
     benefitOne:
       "Improves Mobility: Gentle movements enhance joint flexibility and range of motion.",
     benefitTwo:
@@ -87,11 +102,26 @@ const translations = {
       " Підтримує ментальне здоров’я: рух і музика допомагають залишатися зосередженими та активними.",
     whyFour:
       "Створює відчуття спільноти: приєднуйтесь до дружньої атмосфери, де кожен – цінна частина команди.",
+    whyZumbaOffer: "Якщо ви ще не знайомі з Zumba®, відвідайте ",
+    webLink: "офіційний сайт.",
     ladderOne: "Мої заняття",
-    ladderTwo: "Zumba Gold® На стільці",
+    ladderOneTextOne:
+      "Я – відданий інструктор, який адаптує кожне заняття відповідно до унікальних потреб своїх учнів. Наразі я спеціалізуюся на проведенні занять Zumba Gold® для людей віком 40+. Ці тренування розроблені так, щоб забезпечити помірну, але водночас енергійну активність, яка допомагає залишатися в русі та гармонії з тілом і душею.",
+    ladderOneTextTwo:
+      "Кожне 30-хвилинне заняття Zumba Gold® – це захоплива подорож різними музичними стилями. Ви будете танцювати під ритми меренге, свінгу, танго, регі, кумбії, фламенко, мамбо, ча-ча-ча, урбан меренге, сальси, бачати та багатьох інших.",
+    ladderOneTextThree:
+      "А для ще більшої тропічної атмосфери я також пропоную карибську програму з такими стилями, як Ска, Сока та інші. Це чудова можливість відчути ритм і енергію яскравих культур!",
+    ladderTwoHeaderOne: "Zumba Gold® На стільці",
+    ladderTwoHeaderTwo: "Переваги Zumba Gold® На стільці",
     zumbaChairText:
       "Якщо у вас є труднощі з рухливістю, ви можете спробувати Zumba Gold® Chair – програму, яка зберігає всі переваги Zumba®, але виконується в сидячому положенні. Це робить заняття доступними для кожного, дозволяючи насолоджуватися ритмом, рухами та енергією у комфортному форматі.",
-    ladderThree: "Переваги Zumba Gold® На стільці",
+    ladderThree: "Групові та приватні заняття",
+    ladderThreeTextOne:
+      "Я пропоную як групові, так і приватні заняття, щоб ви могли обрати той формат, який найкраще відповідає вашим уподобанням і розкладу. Якщо вам подобається енергія спільних танців або ви віддаєте перевагу індивідуальним заняттям, адаптованим до ваших потреб, у мене є відповідний варіант для вас.",
+    ladderThreeTextTwo:
+      "Для отримання інформації про актуальні ціни, розклад занять і адреси місць проведення групових класів відвідайте мою офіційну сторінку інструктора",
+    ladderThreeTextThree:
+      "Кожне заняття – це справжня вечірка, Вечірка для вашого серця! Ми будемо насолоджуватися 8-9 запальними піснями, які змушують рухатися, посміхатися і відчувати себе чудово. Незалежно від того, чи хочете ви підтримувати форму, зарядитися енергією або просто весело провести час – Zumba® стане ідеальним способом втекти від буденності!",
     benefitOne:
       " Покращує рухливість – м’які рухи сприяють гнучкості суглобів і розширенню амплітуди рухів.",
     benefitTwo:
@@ -130,10 +160,31 @@ function toggleLanguage() {
   const whyTwoElem = document.querySelector(".why-2");
   const whyThreeElem = document.querySelector(".why-3");
   const whyFourElem = document.querySelector(".why-4");
+  const whyZumbaOfferElem = document.querySelector(".why-zumba-offer");
+  const webLinkElem = document.querySelector(".web-link");
   const ladderOneElem = document.querySelector(".ladder-one h2");
-  const ladderTwoElem = document.querySelector(".ladder-two h2");
+  const ladderOneTextOneElem = document.querySelector(".ladder-one-text-one");
+  const ladderOneTextTwoElem = document.querySelector(".ladder-one-text-two");
+  const ladderOneTextThreeElem = document.querySelector(
+    ".ladder-one-text-three"
+  );
+  const ladderTwoHeaderOneElem = document.querySelector(
+    ".ladder-two-header-one"
+  );
+  const ladderTwoHeaderTwoElem = document.querySelector(
+    ".ladder-two-header-two"
+  );
   const zumbaChairTextElem = document.querySelector(".zumba-chair");
   const ladderThreeElem = document.querySelector(".ladder-three h2");
+  const ladderThreeTextOneElem = document.querySelector(
+    ".ladder-three-text-one"
+  );
+  const ladderThreeTextTwoElem = document.querySelector(
+    ".ladder-three-text-two"
+  );
+  const ladderThreeTextThreeElem = document.querySelector(
+    ".ladder-three-text-three"
+  );
   const benefitOneElem = document.querySelector(".benefit-1");
   const benefitTwoElem = document.querySelector(".benefit-2");
   const benefitThreeElem = document.querySelector(".benefit-3");
@@ -172,12 +223,33 @@ function toggleLanguage() {
   if (whyTwoElem) whyTwoElem.textContent = translations[lang].whyTwo;
   if (whyThreeElem) whyThreeElem.textContent = translations[lang].whyThree;
   if (whyFourElem) whyFourElem.textContent = translations[lang].whyFour;
+  if (whyZumbaOfferElem)
+    whyZumbaOfferElem.textContent = translations[lang].whyZumbaOffer;
+  if (webLinkElem) webLinkElem.textContent = translations[lang].webLink;
   if (ladderOneElem) ladderOneElem.textContent = translations[lang].ladderOne;
-  if (ladderTwoElem) ladderTwoElem.textContent = translations[lang].ladderTwo;
+  if (ladderOneTextOneElem)
+    ladderOneTextOneElem.textContent = translations[lang].ladderOneTextOne;
+  if (ladderOneTextTwoElem)
+    ladderOneTextTwoElem.textContent = translations[lang].ladderOneTextTwo;
+  if (ladderOneTextThreeElem)
+    ladderOneTextThreeElem.textContent = translations[lang].ladderOneTextThree;
+  if (ladderTwoHeaderOneElem)
+    ladderTwoHeaderOneElem.textContent = translations[lang].ladderTwoHeaderOne;
+  if (ladderTwoHeaderTwoElem)
+    ladderTwoHeaderTwoElem.textContent = translations[lang].ladderTwoHeaderTwo;
   if (zumbaChairTextElem)
     zumbaChairTextElem.textContent = translations[lang].zumbaChairText;
   if (ladderThreeElem)
     ladderThreeElem.textContent = translations[lang].ladderThree;
+
+  if (ladderThreeTextOneElem)
+    ladderThreeTextOneElem.textContent = translations[lang].ladderThreeTextOne;
+  if (ladderThreeTextTwoElem)
+    ladderThreeTextTwoElem.textContent = translations[lang].ladderThreeTextTwo;
+  if (ladderThreeTextThreeElem)
+    ladderThreeTextThreeElem.textContent =
+      translations[lang].ladderThreeTextThree;
+
   if (benefitOneElem)
     benefitOneElem.textContent = translations[lang].benefitOne;
   if (benefitTwoElem)
