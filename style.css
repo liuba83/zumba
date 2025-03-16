@@ -28,9 +28,6 @@ b {
 header {
   background: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* position: sticky;
-  top: 0;
-  z-index: 100; */
 }
 
 .navbar {
@@ -129,9 +126,6 @@ input:checked + .slider:before {
 
 /* Home Content Wrapper */
 .home-content-wrapper {
-  /* width: 90%;
-  max-width: 800px;
-  margin: 0 auto; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,7 +224,6 @@ input:checked + .slider:before {
 
 /* Gallery Section */
 .gallery {
-  /* padding: 0 20px 20px; */
   padding: 0;
   background: #f9f9f9;
   text-align: center;
@@ -256,8 +249,6 @@ input:checked + .slider:before {
 }
 
 .gallery-container img {
-  /* width: 700px;
-  height: 500px; */
   width: 65%;
   height: auto;
   object-fit: cover;
@@ -322,21 +313,12 @@ textarea.text-input {
   background: #c82345; /* Darker shade on hover */
 }
 
-/* Footer */
-/* footer {
-  background: #ececec;
-  color: #e73156;
-  text-align: center;
-  padding: 15px;
-} */
-
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px;
   background-color: #ececec;
-  /* color: #e73156; */
   color: black;
 }
 
@@ -414,8 +396,6 @@ footer {
   }
 
   .about-text {
-    /* width: 55%; */
-    /* padding: 2rem; */
     border-radius: 6px;
   }
 
@@ -452,18 +432,6 @@ footer {
     background-color: #fff;
     padding: 25px 0 25px 0;
   }
-
-  /* .ladder-one {
-    background-color: #fae7ec;
-  }
-
-  .ladder-two {
-    background-color: #fae7ec;
-  }
-
-  .ladder-three {
-    background-color: #fae7ec;
-  } */
 
   .ladder-one,
   .ladder-two,
@@ -525,24 +493,4 @@ footer {
     background-color: #fff;
     text-align: justify;
   }
-
-  /* .ladder-one,
-  .ladder-two,
-  .ladder-three {
-    padding: 20px;
-    border-radius: 10px;
-    width: 65%;
-    opacity: 0;
-    background-color: #fae7ec;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  } */
-
-  /* When the element is visible, animate it */
-  /* .ladder-one.show,
-  .ladder-two.show,
-  .ladder-three.show {
-    opacity: 1;
-    transform: translateY(0);
-  } */
 }

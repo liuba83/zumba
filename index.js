@@ -1,20 +1,3 @@
-// Video Skip Functionality
-// const video = document.getElementById("zumbaVideo");
-// const skipButton = document.getElementById("skipButton");
-
-// if (video) {
-//   // Show the skip button after 15 seconds
-//   setTimeout(() => {
-//     skipButton.style.display = "block";
-//   }, 15000);
-
-//   skipButton.addEventListener("click", () => {
-//     video.pause();
-//     // Optionally hide the video container once skipped
-//     video.parentElement.style.display = "none";
-//   });
-// }
-
 // Language Toggle Functionality
 const languageToggle = document.getElementById("languageToggle");
 const langLabel = document.getElementById("langLabel");
