@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"
       rel="stylesheet"
     />
+    <script>
+      //Reset form
+      window.onbeforeunload = () => {
+        for (const form of document.getElementsByTagName("form")) form.reset();
+      };
+    </script>
   </head>
   <body>
     <header>
@@ -21,6 +27,7 @@
           <li><a href="#journey">Journey</a></li>
           <li><a href="#teaching">Services</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#gallery">Gallery</a></li>
         </ul>
       </nav>
     </header>
@@ -110,8 +117,8 @@
         </p>
       </section>
 
-      <section id="media" class="gallery">
-        <h2>🎶 Hear My Voice</h2>
+      <section id="media" class="media">
+        <h2>🎶 Hear My Voice & Playing Saxophone</h2>
         <p>Here you can listen to my voice in these audio tracks:</p>
         <audio controls>
           <source src="audio1.mp3" type="audio/mpeg" />
@@ -119,6 +126,14 @@
         </audio>
         <audio controls>
           <source src="audio2.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+          <source src="audio3.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+          <source src="audio4.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
       </section>
@@ -159,12 +174,21 @@
           </div>
         </form>
       </section>
+
+      <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+          <button id="back" class="btn">←</button>
+          <img id="pictures" src="gallery/1.jpg" alt="Gallery Image 1" />
+          <button id="next" class="btn">→</button>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <div class="footer-content">
-        <p class="footer-text">© 2025 Hanna Kovalenko | My Musical World</p>
-      </div>
+      <div class="footer-content"></div>
     </footer>
+
+    <script src="music.js"></script>
   </body>
 </html>

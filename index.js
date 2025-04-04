@@ -1,3 +1,14 @@
+// Footer
+const footer = document.querySelector(".footer-par");
+const copyright = document.createElement("p");
+
+footer.appendChild(copyright);
+
+const today = new Date();
+const thisYear = today.getFullYear();
+
+copyright.textContent = `\u00A9 Hanna Kovalenko ${thisYear}`;
+
 // Language Toggle Functionality
 const languageToggle = document.getElementById("languageToggle");
 const langLabel = document.getElementById("langLabel");

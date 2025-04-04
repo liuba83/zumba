@@ -453,14 +453,9 @@ footer {
     transform: translateY(0);
   }
 
-  /* Gallery: Grid with two columns (or more if space permits) */
   .gallery {
     padding: 0 20px 20px;
   }
-  /* 
-  .gallery-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  } */
 
   .gallery-container img {
     width: 700px;
