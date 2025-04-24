@@ -70,7 +70,6 @@ const translations = {
     galleryHeading: "Gallery",
     contactHeading: "Contact Me",
     contactMeButton: "Send Message",
-    footer: "All Rights Reserved | 2025",
   },
   uk: {
     aboutNav: "Про мене",
@@ -128,7 +127,6 @@ const translations = {
     galleryHeading: "Галерея",
     contactHeading: "Готові рухатися? Давайте Zumba!",
     contactMeButton: "Відправити повідомлення",
-    footer: "Всі права захищені | 2025",
   },
 };
 
@@ -187,7 +185,6 @@ function toggleLanguage() {
   const galleryHeadingElem = document.querySelector("#gallery h2");
   const contactHeadingElem = document.querySelector("#contact h2");
   const contactMeButtonElem = document.querySelector(".contact-me-btn");
-  const footerElem = document.querySelector(".footer");
 
   if (aboutNavElem) aboutNavElem.textContent = translations[lang].aboutNav;
   if (classesNavElem)
@@ -259,7 +256,6 @@ function toggleLanguage() {
     contactHeadingElem.textContent = translations[lang].contactHeading;
   if (contactMeButtonElem)
     contactMeButtonElem.textContent = translations[lang].contactMeButton;
-  if (footerElem) footerElem.textContent = translations[lang].footer;
 }
 
 languageToggle.addEventListener("change", toggleLanguage);
