@@ -165,13 +165,6 @@ function toggleLanguage() {
     contactMeButtonElem.textContent = translations[lang].contactMeButton;
   if (galleryHeaderElem)
     galleryHeaderElem.textContent = translations[lang].galleryHeader;
-
-  console.log(
-    "Promotion text (lang:",
-    lang,
-    "):",
-    translations[lang].promotionText
-  );
 }
 
 languageToggle.addEventListener("change", toggleLanguage);
