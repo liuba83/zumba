@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanna Kovalenko</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="english.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8351363f4d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      //Reset form
+      window.onbeforeunload = () => {
+        for (const form of document.getElementsByTagName("form")) form.reset();
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo" id="logo">
+          <img src="favicon.png" alt="Logo" class="logo-img" />
+          <span>Hanna Kovalenko</span>
+        </div>
+        <ul class="nav-links">
+          <li><a class="about-nav" href="#about">About</a></li>
+          <li><a class="services-nav" href="#teaching">Classes</a></li>
+          <li><a class="contact-nav" href="#contact">Contact</a></li>
+          <li><a class="gallery-nav" href="#gallery">Gallery</a></li>
+        </ul>
+        <!-- Language Switch -->
+        <div class="lang-switch">
+          <label for="languageToggle">🌐</label>
+          <select id="languageToggle">
+            <option value="EN" selected>English</option>
+            <option value="UA">Ukrainian</option>
+            <option value="PL">Spanish</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>"You live a new life for every new language you speak"</h2>
+        <p>Czech Proverb</p>
+      </section>
+
+      <section class="video-presentation">
+        <h2>
+          Shaping Futures with English Language, Joyful Learning, and Student
+          Success – 22 Years and Counting
+        </h2>
+        <div class="video-wrapper">
+          <video
+            class="video"
+            controls
+            preload="metadata"
+            poster="media/thumbnail.jpg"
+            aria-label="Video presentation by Hanna Kovalenko"
+          >
+            <source src="media/presentation.mp4" type="video/mp4" />
+            <track
+              src="media/captions.vtt"
+              kind="captions"
+              srclang="en"
+              label="English captions"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about__container">
+          <!-- Profile Image -->
+          <aside class="about__sidebar">
+            <figure class="about__media">
+              <img
+                src="profile.jpg"
+                alt="Portrait of Anna Kovalenko"
+                class="about__img"
+              />
+            </figure>
+          </aside>
+
+          <!-- About Content -->
+          <div class="about__content">
+            <h3 class="about__title">My English Teaching Journey</h3>
+            <p>
+              With over 20 years of experience in teaching English, I bring
+              dedication, creativity, and a personalized approach to each of my
+              students. I was born and raised in Kremenchuk, Ukraine, where I
+              developed my professional path. Since 2022, I have been living and
+              working in the USA, in Houston, Texas.
+            </p>
+
+            <h3 class="about__subtitle">
+              I have worked with students in a wide range of settings:
+            </h3>
+            <ul class="about__list">
+              <li>Large classrooms of over 30 students</li>
+              <li>Small groups of around 10</li>
+              <li>Pairs and individual learners</li>
+              <li>Both offline and online formats</li>
+            </ul>
+
+            <p>
+              This experience has shaped my ability to create engaging,
+              goal-oriented lessons that meet the needs of different learners.
+              I&#39;m especially skilled at building strong communication with
+              children and finding a personalized approach for each student.
+            </p>
+
+            <!-- Places of Work -->
+            <h3 class="about__subtitle">📍 Places of Work</h3>
+            <ul class="about__list">
+              <li>
+                <strong>Gymnasium #23, Kremenchuk, Ukraine</strong><br />
+                Teacher of English (2006–2022)<br />
+                Title: Teacher-Methodologist, Highest Teacher&#39;s Category
+              </li>
+              <li>
+                <strong
+                  >WSG University in Bydgoszcz (Poland) – Branch at Kremenchuk
+                  Campus</strong
+                ><br />
+                Teacher of English – Exam Preparation Course (2017–2020)
+              </li>
+              <li>
+                <strong
+                  >Private Educational Center "Success", Kremenchuk,
+                  Ukraine</strong
+                ><br />
+                Teacher of English (2010–2017)
+              </li>
+              <li>
+                <strong>Gymnasium #6, Kremenchuk, Ukraine</strong><br />
+                Teacher of English (2002–2006)
+              </li>
+            </ul>
+
+            <!-- Education -->
+            <h3 class="about__subtitle">🎓 Education</h3>
+            <ul class="about__list">
+              <li>
+                <strong
+                  >Oleksandr Dovzhenko Hlukhiv National Pedagogical
+                  University</strong
+                ><br />
+                2000–2005 — Master&#39;s Degree in Teaching English, Ukrainian,
+                and Foreign Literature
+              </li>
+              <li>
+                <strong
+                  >Kremenchuk Pedagogical College named after A.S.
+                  Makarenko</strong
+                ><br />
+                1995–2000 — Diploma in Primary Education<br />
+                Qualified to teach English, Music, and conduct children&#39;s
+                choirs
+              </li>
+            </ul>
+
+            <!-- Professional Achievements -->
+            <h3 class="about__subtitle">🏆 Professional Achievements</h3>
+            <ul class="about__list">
+              <li>
+                Awarded top places in national teaching contests for educators
+              </li>
+              <li>
+                Published methodological articles in Ukrainian educational
+                magazines
+              </li>
+              <li>Spoke at scientific conferences and teacher workshops</li>
+              <li>
+                Served as an examiner for the final English writing exams taken
+                by students across Ukraine.
+              </li>
+            </ul>
+            <p>
+              These experiences have helped me stay current, inspired, and
+              constantly improving as an educator.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="teaching" class="teaching">
+        <div class="teaching-card">
+          <h3>🌍 Who I Teach</h3>
+          <p>
+            I offer English lessons to Ukrainian, Polish, and Spanish-speaking
+            students — whether they are complete beginners or at an
+            upper-intermediate level — helping everyone build confidence and
+            fluency in a comfortable and supportive environment.
+          </p>
+
+          <h3>💻 Online Learning Opportunities</h3>
+          <p>
+            I currently offer online English lessons via Zoom, Google Meet, and
+            Microsoft Teams, at times that are convenient for each learner. I am
+            available for individual sessions, paired lessons, and group
+            classes.
+          </p>
+          <p>
+            <strong
+              >If you&#39;re looking for a passionate, experienced, and
+              student-focused English teacher, I would be happy to help.</strong
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <h2>
+          Please fill in the form below, and I&#39;ll get in touch with you
+          soon!
+        </h2>
+        <form action="https://formspree.io/f/mnnpagyq" method="POST">
+          <div class="submitform">
+            <input
+              class="text-input"
+              type="text"
+              name="name"
+              placeholder="Name"
+              required=""
+            />
+          </div>
+
+          <div class="submitform">
+            <input
+              class="text-input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required=""
+            />
+          </div>
+
+          <div class="submitform">
+            <textarea
+              class="text-input"
+              name="message"
+              placeholder="Text..."
+              required=""
+            ></textarea>
+          </div>
+          <div class="submitform">
+            <button class="contact-me-btn" type="submit">Send Message</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+          <button id="back" class="btn">←</button>
+          <img id="pictures" src="gallery/1.jpg" alt="Gallery Image 1" />
+          <button id="next" class="btn">→</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>
+          &copy; Hanna Kovalenko <span id="year"></span>
+          <a
+            href="https://www.youtube.com/watch?v=LcZizEgKaN0&list=PLUQCB0fGtnwhQ8AjVUW_BNOt4eC0VsZAn"
+            class="youtube-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Hanna's YouTube channel"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+        </p>
+      </div>
+    </footer>
+    <script src="english.js"></script>
+  </body>
+</html>

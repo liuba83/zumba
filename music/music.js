@@ -198,10 +198,3 @@ back.addEventListener("click", () => {
   }
   document.querySelector("#pictures").src = photos[i];
 });
-
-// Working with contact form
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form from actually submitting
-  });
