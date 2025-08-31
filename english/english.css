@@ -48,13 +48,13 @@ header {
   align-items: center;
   font-weight: bold;
   font-size: 1.2rem;
-  gap: 0.5rem; /* space between img and text */
+  gap: 0.5rem;
   cursor: pointer;
 }
 
 .logo-img {
-  width: 40px; /* adjust as needed */
-  height: auto; /* keeps aspect ratio */
+  width: 40px;
+  height: auto;
 }
 
 .logo span {
@@ -117,7 +117,7 @@ h2 {
   font-size: clamp(1.25rem, 2.5vw, 1.75rem);
   line-height: 1.3;
   text-align: center;
-  color: #33338f; /* matches your palette */
+  color: #33338f;
 }
 
 /* Keeps video responsive at 16:9; works for <video> and <iframe> */
@@ -128,25 +128,25 @@ h2 {
   overflow: hidden;
   background: #000;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
-  aspect-ratio: 16 / 9; /* modern browsers */
+  aspect-ratio: 16 / 9;
   position: relative;
 }
 
-/* For browsers without aspect-ratio support, this keeps layout robust */
+/* For browsers without aspect-ratio support*/
 .video-wrapper::before {
   content: "";
   display: block;
-  padding-top: 56.25%; /* 16:9 fallback */
+  padding-top: 56.25%;
 }
 
 .video {
-  position: absolute; /* pair with ::before fallback */
+  position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   display: block;
-  border: 0; /* removes iframe border */
-  object-fit: cover; /* for <video> posters */
+  border: 0;
+  object-fit: cover;
 }
 
 .about {
@@ -157,7 +157,7 @@ h2 {
 .about__container {
   max-width: 1100px;
   margin: 0 auto;
-  display: grid; /* mobile: stacked */
+  display: grid;
   gap: 1.5rem;
 }
 
@@ -176,12 +176,11 @@ h2 {
   place-items: center;
 }
 
-/* MOBILE: square avatar, cover works well */
 .about__img {
   width: min(220px, 80vw);
   aspect-ratio: 1 / 1.25;
   object-fit: cover;
-  object-position: top center; /* keep the top in view, crop bottom instead */
+  object-position: top center;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
@@ -208,7 +207,7 @@ h2 {
 }
 
 .teaching-card {
-  border: 1px solid #3338a0; /* starting color */
+  border: 1px solid #3338a0;
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
   background: #fff;
@@ -236,7 +235,7 @@ h2 {
 }
 
 .teaching-card h3 {
-  margin-top: 0; /* remove top gap */
+  margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   color: #3338a0;
@@ -244,11 +243,11 @@ h2 {
 }
 
 .teaching-card p {
-  margin: 0 0 1rem; /* space paragraphs */
+  margin: 0 0 1rem;
 }
 
 .teaching-card p:last-child {
-  margin-bottom: 0; /* avoid extra space at bottom */
+  margin-bottom: 0;
 }
 
 .contact {
@@ -373,7 +372,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  /* Header & Navigation (Horizontal layout) */
   header {
     background: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -396,23 +394,22 @@ footer {
   }
 
   .about__container {
-    grid-template-columns: 360px 1fr; /* sidebar | content */
+    grid-template-columns: 360px 1fr;
     align-items: start;
     gap: 2rem;
   }
 
   .about__sidebar {
-    position: sticky; /* nice UX if content is tall */
+    position: sticky;
     top: 2rem;
   }
 
-  /* Let the image keep its natural aspect ratio so the top isn't cut */
   .about__img {
     width: 100%;
-    height: auto; /* remove forced height */
-    aspect-ratio: auto; /* cancel the mobile ratio */
-    object-fit: contain; /* show the whole image */
-    object-position: top center; /* if there’s any room, prioritize the top */
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: top center;
     border-radius: 16px;
   }
 

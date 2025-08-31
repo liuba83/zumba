@@ -18,8 +18,6 @@ const photos = [
   "gallery/8.jpg",
   "gallery/9.jpg",
   "gallery/10.jpg",
-  "gallery/11.jpg",
-  "gallery/12.jpg",
   "gallery/13.jpg",
   "gallery/14.jpg",
   "gallery/15.jpg",
@@ -27,7 +25,6 @@ const photos = [
   "gallery/17.jpg",
   "gallery/18.jpg",
   "gallery/19.jpg",
-  "gallery/20.jpg",
 ];
 
 let i = 0;
