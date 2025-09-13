@@ -179,6 +179,8 @@ const photos = [
   "gallery/10.jpg",
   "gallery/11.jpg",
   "gallery/12.jpg",
+  "gallery/13.jpg",
+  "gallery/14.jpg",
 ];
 
 let i = 0;
